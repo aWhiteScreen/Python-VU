@@ -11,7 +11,7 @@ print("2. 	Sukonstruokite pasikartojantį masyvą pagal duotą N. \n "
 "Duotas masyvas [1, 2, 3, 4] ir N = 3 \n "
 "Rezultatas [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4] \n "
 "Masyvas gali būti bet kokio dydžio ir atsitiktinai sugeneruojamas.")
-array_two = [1, 2, 3, 4]
+array_two = np.random.rand(4)
 N = 3
 result_array = np.tile(array_two, N)
 print(result_array)
@@ -69,6 +69,7 @@ print("11. 	Pasinaudodami polinėmis koordinatėmis nupieškite kardioidę.")
 theta = np.linspace(0, 2*np.pi, 1000)
 r = 5 - 5 * np.sin(theta)
 plt.polar(theta, r, 'r')
+plt.title("Cardioid")
 plt.show()
 
 print("12. 	Sugeneruokite masyvą iš 1000 atsitiktinių skaičių, pasiskirsčiusių pagal normalųjį dėsnį su duotais vidurkiu V ir dispersija D. \n"
