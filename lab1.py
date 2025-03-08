@@ -56,8 +56,8 @@ print("9.   Apskaičiuokite funkcijos 0.5*x**2 + 5 * x + 4 išvestines su numpy 
 numpy_derivative = np.poly1d([0.5, 5, 4]).deriv()
 print(f"Numpy derivative: {numpy_derivative}")
 x = sp.Symbol("x")
-simpy_derivative = (0.5*x**2+5*x+4).diff(x)
-print(f"Simpy derivative: {simpy_derivative}")
+sympy_derivative = (0.5*x**2+5*x+4).diff(x)
+print(f"Sympy derivative: {sympy_derivative}")
 
 print("10. 	Apskaičiuokite funkcijos e-x apibrėžtinį, intervale [0,1], ir neapibrėžtinį integralus.")
 definite_integral = sp.integrate(sp.E - x, (x,0,1))
