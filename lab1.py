@@ -2,7 +2,7 @@ import numpy as np
 import sympy as sp
 import matplotlib.pyplot as plt
 
-print("Padalinkite intervalą nuo -1.3 iki 2.5 tolygiai į 64 dalis.")
+print("1.   Padalinkite intervalą nuo -1.3 iki 2.5 tolygiai į 64 dalis.")
 array_one = np.linspace(-1.3, 2.5, 64)
 for x in range(len(array_one)):
     print(f"{x+1} {array_one[x]}")
