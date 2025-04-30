@@ -1,0 +1,11 @@
+1,2,3 punktai:
+
+python setup.py build
+python setup.py install --user
+
+Tada galima pasileisti test.py ir pasižiūrėti į rezultatus
+
+4 punktas:
+
+gcc -o embed_perfect_pangram embed_perfect_pangram.c $(python3-config --cflags --ldflags --embed)
+PYTHONPATH=. ./embed_perfect_pangram
