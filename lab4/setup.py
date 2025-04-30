@@ -1,10 +1,11 @@
 from setuptools import setup, Extension
 
-module = Extension('perfect_pangram', sources=['perfect_pangram.c'])
+pangram_module = Extension('perfect_pangram', sources=['perfect_pangram.c'])
+rational_module = Extension('rational', sources=['rational_number.c'])
 
 setup(
-    name='perfect_pangram',
+    name='pangram_and_rational',
     version='1.0',
-    description='Module for checking for perfect pangrams',
-    ext_modules=[module]
+    description='Modules for checking perfect pangrams and a rational number with an add method',
+    ext_modules=[pangram_module, rational_module]
 )
